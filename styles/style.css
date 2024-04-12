@@ -1,0 +1,90 @@
+html {
+  background-image: linear-gradient(to bottom right, #ffadc6, #5da9e9);
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  min-height: 100vh;
+}
+#container {
+    margin: 20px;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+h1 {
+  display: inline;
+  color: #92f7cc;
+  border-bottom: solid;
+}
+.fa-note-sticky {
+  color: #92f7cc;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 5px;
+  background-image: linear-gradient(to bottom, #bcf2da, #92f7cc);
+  border-radius: 50vh;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+.fa-pencil {
+  font-size: 20px;
+  color: #ffffff;
+}
+.note-container {
+  padding: 0;
+  position: relative;
+}
+.note {
+  margin-top: 20px;
+  position: relative;
+  width: 40vw;
+  height: 20vw;
+  padding: 0;
+  padding-left: 10px;
+  padding-top: 20px;
+  display: none;
+}
+textarea {
+  width: 40vw;
+  height: 20vw;
+  border: 0;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 2vw;
+  padding: 20px !important;
+  background-color: #364652;
+  color: #c5f4e0;
+  outline: solid 2px;
+}
+.fa-paperclip,
+.fa-trash-can {
+  position: absolute;
+  z-index: 10;
+}
+.fa-paperclip {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 40px;
+  color: #92f7cc;
+}
+.fa-trash-can {
+  bottom: 10px;
+  right: 10px;
+  color: #92f7cc;
+  font-size: 30px;
+  cursor: pointer;
+}
