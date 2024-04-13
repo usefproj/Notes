@@ -32,8 +32,8 @@ function saveData() {
     localStorage.setItem("areaValues", myValues.toString())
 }
 function setData() {
-    let values = localStorage.getItem("areaValues").split(",")
     if (values != null && localStorage.getItem("note") != null) {
+        let values = localStorage.getItem("areaValues").split(",")
         addHere.innerHTML += localStorage.getItem("note")
         for (let i = 0; i < values.length; i++) {
         addHere.children[i].lastElementChild.value = values[i]
